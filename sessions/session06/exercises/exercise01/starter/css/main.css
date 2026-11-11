@@ -37,7 +37,7 @@ h1 {
 
 .item-4 {
   /*grid-row: 3 / 4;*/
-  /*align-self: end;*/
+  align-self: end;
 }
 
 .sub-item {
