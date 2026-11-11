@@ -18,7 +18,11 @@ body {
 header {
   background-color: var(--primary-color);
   background: var(--primary-color);
-  background: radial-gradient(circle, var(--primary-color) 60%, var(--second-color) 100%);
+  background: radial-gradient(
+    circle,
+    var(--primary-color) 60%,
+    var(--second-color) 100%
+  );
   margin-bottom: 3rem;
 }
 h1 {
@@ -44,12 +48,15 @@ form {
   padding: 0.5rem;
   margin-bottom: 0.4rem;
 }
-input, textarea {
+input,
+textarea {
   border: 1px solid var(--second-color);
   border-radius: 4px;
   color: var(--second-color);
 }
-input:not(input[type="radio"], input[type="checkbox"]), textarea, select {
+input:not(input[type="radio"], input[type="checkbox"]),
+textarea,
+select {
   width: 100%;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -85,6 +92,6 @@ label {
 
 /* Per marcar tots els camps obligatoris igual */
 .is-required::after {
-  content: '*';
+  content: "*";
   color: red;
 }
