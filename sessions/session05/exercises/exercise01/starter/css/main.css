@@ -24,6 +24,12 @@ nav#vertical {
   width: 20vw;
 }
 nav ul {
+  display: flex;
+  align-items: center; /* Alineación vertical */
+  gap: 1rem; /* Separación uniforme (si procede) */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 nav#horizontal ul {
   height: 3.5rem;
@@ -34,18 +40,20 @@ nav#horizontal ul {
 nav#vertical ul {
   display: flex;
   flex-direction: column;
-  height 100%;
+  height: calc(100vh - 3.5rem);
 }
 li {
   display: inline-block;
   height: 100%;
+  outline: 2px solid yellow;
+  outline-offset: -2px;
 }
 nav#horizontal li {
   width: 12.5%;
 }
 nav#vertical li {
   width: 100%;
-  height: 8rem;
+  height: 3rem;
 }
 li:hover {
   cursor: pointer;
