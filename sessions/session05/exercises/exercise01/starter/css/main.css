@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #EA5D40;
-  --second-color: #FCEEEB;
-  --third-color: #752E20;
-  --fourth-color: #2E120C;
+  --primary-color: #ea5d40;
+  --second-color: #fceeeb;
+  --third-color: #752e20;
+  --fourth-color: #2e120c;
 }
 * {
   box-sizing: border-box;
@@ -20,32 +20,47 @@ nav {
   background-color: var(--third-color); /* #752E20; */
   color: var(--second-color); /* #FCEEEB; */
 }
-nav#vertical { width: 20vw; }
+nav#vertical {
+  width: 20vw;
+}
 nav ul {
-  /* Afegir codi aquí */
+  display: flex;
+  align-items: center; /* Alineación vertical */
+  gap: 1rem; /* Separación uniforme (si procede) */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 nav#horizontal ul {
   height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 nav#vertical ul {
-  /* Afegir codi aquí per l'EXTRA */
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 3.5rem);
 }
 li {
   display: inline-block;
   height: 100%;
+  outline: 2px solid yellow;
+  outline-offset: -2px;
 }
 nav#horizontal li {
-  /* Afegir codi aquí */
+  width: 12.5%;
 }
 nav#vertical li {
   width: 100%;
+  height: 3rem;
 }
 li:hover {
   cursor: pointer;
   background-color: var(--fourth-color); /* #2E120C; */
 }
 li#logo {
-  /* Afegir codi aquí */
+  margin-right: auto;
 }
 li#logo:hover {
   background-color: var(--third-color); /* #752E20; */
@@ -56,7 +71,9 @@ a {
   height: 100%;
   width: 100%;
 
-  /* Afegir codi aquí */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 span.material-icons {
   font-size: 2rem;
